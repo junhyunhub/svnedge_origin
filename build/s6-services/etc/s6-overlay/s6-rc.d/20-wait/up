@@ -1,0 +1,3 @@
+#!/command/execlineb -P
+s6-setuidgid svnedge
+bash /etc/s6-overlay/s6-rc.d/20-wait/wait-httpd.sh

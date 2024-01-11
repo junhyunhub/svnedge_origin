@@ -1,0 +1,4 @@
+#!/command/execlineb -P
+s6-setuidgid svnedge
+cd /home/svnedge/csvn
+bin/csvn-httpd start

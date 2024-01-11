@@ -1,0 +1,3 @@
+#!/command/execlineb -P
+cd /home/svnedge/csvn
+bin/csvn stop
