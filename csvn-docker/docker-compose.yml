@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  edge:
+    image: svnedge:1.0.0
+    container_name: bms_svnedge
+    hostname: bms_svnedge
+    ports:
+      - "18080:18080"
+      - "3343:3343"
+    environment:
+      SET_PERMS: "false"
+      S6_CMD_WAIT_FOR_SERVICES_MAXTIME: 0 # No init script wait time limit
+    volumes:
+      - "$CSVN_HOME/data:/home/svnedge/csvn/data"
