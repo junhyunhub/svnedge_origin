@@ -11,7 +11,7 @@ docker build -t {name} .
 ---
 ## Purpose
 
-- Svnedge 의 홈페이지가 사라짐, 더 이상 서비스 하지 않으므로 부서 내에서 사용하고 있는 svnedge 를 관리하기 위해 dockerfile 로 제작 필요.
+- Svnedge 의 홈페이지가 사라짐, 더 이상 서비스 하지 않으므로 사용하고 있는 svnedge 를 관리하기 위해 dockerfile 로 제작 필요.
 
 ## Content
 
@@ -20,7 +20,7 @@ docker build -t {name} .
 ## Prerequisites
 
 - OS 이미지가 Centos7 이 올라가 있으며 Maintenance Support set for June 30, 2024. 이므로 Ubuntu Server 22.04 로 교체한다.
-- 도커파일로 만들어서 직접 이미지를 관리한다 (부서 git hub)
+- 도커파일로 만들어서 직접 이미지를 관리
 - 컨피그 파일 및 백업 폴더를 만든다.
 
 svnedge 의 경우 이미 3년전 업데이트가 마지막이고 s6-overlay 의 경우 v1.22.1 버전을 사용했으나 현 시점에서 s6-overlay 는 V3 버전이며 많은 변경이 생겼으므로 s6 v3 기준으로 변경하여 기존 스크립트를 대체한다.
